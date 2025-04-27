@@ -1,0 +1,155 @@
+/* básico1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e1a36;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #A50044;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #FDB913;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FDB913;
+}
+
+/* Main */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+
+.menu {
+    width: 20%;
+    background-color: #1D2545;
+    padding: 15px;
+    border-right: 2px solid #FDB913;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #FDB913;
+}
+
+/* Section */
+section {
+    width: 55%;
+    padding: 15px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FDB913;
+    padding-bottom: 5px;
+}
+
+article {
+    margin-bottom: 20px;
+    background-color: #1D2545;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*imagen bien*/
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; 
+    display: block;
+    margin: 0 auto; 
+    object-fit: cover; /* asegura que la imagen no se deforme */
+    border-radius: 8px;
+}
+
+.lateral {
+    width: 25%;
+    background-color: #1D2545;
+    padding: 15px;
+    border-left: 2px solid #FDB913;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #A50044;
+    margin-top: 20px;
+}
+
+.menu img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Responsividad ---maquteat1 */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .menu, section, .lateral {
+        width: 100%;
+        border: none;
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
